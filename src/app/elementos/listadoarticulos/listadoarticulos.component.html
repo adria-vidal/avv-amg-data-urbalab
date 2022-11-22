@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th *ngFor="let item of articulos">
+      {{item.key}}
+    </th>
+  </tr>
+  <tr>
+    <th *ngFor="let item of articulos">
+      {{item.codigo}}
+      {{item.descripcion}}
+      {{item.precio}}
+      <button (click)="delete()">Borrar</button>
+      <button (click)="select()">Seleccionar</button>
+
+    </th>
+  </tr>
+
+</table>
